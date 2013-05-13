@@ -1,0 +1,355 @@
+/**Trying to follow the standards outlined in the following:
+*
+*	http://make.wordpress.org/core/handbook/coding-standards/css/
+*
+*		.sample {
+*			display:
+*			positioning:
+*			box model:
+*			colors and typography:;
+*			other: 
+*		}
+*
+*  color scheme:
+*
+*  #CCCCCC -> light grey
+*  #969696 -> medium grey
+*  #4D4D4D -> dark grey
+*  #AF96BE -> light pink color
+*
+**/
+
+body {
+  background-color: #CCCCCC;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+#container {
+  background-color: #969696;
+}
+
+#sub-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  padding-top: 20px;
+  line-height: 100%;
+	font-weight: 400;
+	font-size: 3.7em;
+  color: #4D4D4D;
+  text-shadow:#fff 0px -1px 0, #000 0 -1px 0;
+}
+
+h2 {
+	font-weight: 400;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+h3 {
+  padding-top: 20px;
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 600;
+  color: white;
+}
+
+address {
+  line-height: 160%;
+}
+
+#header {
+
+}
+
+#contact-info {
+  display: none;
+  max-width: 200px;
+
+}
+
+  #phone {
+    font-weight: 600;
+  }
+
+  #email {
+    text-decoration: none;
+    color: #4D4D4D;
+  }
+
+    #email:hover {
+      color: black;
+      /* Transition code below */
+            transition-property: color;
+            transition-duration: .05s;
+            transition-timing-function: linear;
+            /* Firefox 4 */
+            -moz-transition-property: color;
+            -moz-transition-duration:.05s;
+            -moz-transition-timing-function:linear;
+            /* Safari and Chrome */
+            -webkit-transition-property:color;
+            -webkit-transition-duration:.05s;
+            -webkit-transition-timing-function:linear;
+            /* Opera */
+            -o-transition-property:color;
+            -o-transition-duration:.05s;
+            -o-transition-timing-function:linear;
+    }
+
+nav {
+  margin-top: -80px;
+  float: right;
+  max-width: 320px; /* Needs to be adjusted if #socialwork and #website are displayed */
+}
+
+  nav li a {
+    display: block;
+    float: left;
+    margin-right: 40px;
+    line-height: 40px;
+    width: 80px;
+    height: 80px;
+    background-color: #CCCCCC;
+    color: #969696;
+    border-radius: 50%; /* makes buttons circular */
+    text-decoration: none;
+  }
+
+    #socialwork {
+      display: none;
+      background-image: url('images/sw.png');
+      background-position: center;
+    }
+
+    #website {
+      display: none;
+      background-image: url('images/w.png');
+      background-position: center;
+    }
+
+    #github {
+      background-image: url('images/github/github-64.png');
+      background-position: center;
+    }
+
+    #linkedin {
+      background-image: url('images/linkedin/linkedin-64.png');
+      background-position: center;
+    }
+
+    #twitter {
+      background-image: url('images/twitter/twitter-64.png');
+      background-position: center;
+    }
+
+    nav li a:hover {
+      background-color: #4D4D4D;
+      /* Transition code below */
+          transition-property: background-color;
+          transition-duration: .05s;
+          transition-timing-function: linear;
+          /* Firefox 4 */
+          -moz-transition-property:background-color;
+          -moz-transition-duration:.05s;
+          -moz-transition-timing-function:linear;
+          /* Safari and Chrome */
+          -webkit-transition-property:background-color;
+          -webkit-transition-duration:.05s;
+          -webkit-transition-timing-function:linear;
+          /* Opera */
+          -o-transition-property:background-color;
+          -o-transition-duration:.05s;
+          -o-transition-timing-function:linear;
+    }
+
+    nav li a:active {
+      background-color: #AF96BE;
+    }
+
+  nav li a span {
+     display: none;
+   }
+
+section {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: url('images/cream-paper.png') #969696;
+  -webkit-box-shadow: 0px -2px 2px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow:    0px -2px 2px rgba(50, 50, 50, 0.2);
+  box-shadow:         0px -2px 2px rgba(50, 50, 50, 0.2);
+}
+
+  section h2 {
+    color: #4D4D4D;
+    text-shadow: 0 1px 1px white;
+  }
+
+.subsection li {
+  margin-left: 15px;
+  list-style-image: url('images/add-white.png');
+  list-style-position: outside;
+}
+
+#highlight {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+  padding-bottom: 40px;
+  background-position: center top;
+  -webkit-box-shadow: 0px 0px 0px rgba(50, 50, 50, 0.55);
+  -moz-box-shadow:    0px 0px 0px rgba(50, 50, 50, 0.55);
+  box-shadow:         0px 0px 0px rgba(50, 50, 50, 0.55);
+}
+
+  #highlight h2 {
+    color: white;
+    text-shadow: 0 1px 1px black;
+  }
+
+  #highlight p {
+    margin-left: 0px;
+    line-height: 120%;
+    font-size: 4em;
+    color: white;
+    text-shadow: 0 1px 1px black;
+  }
+
+  /* Carousel styling */
+
+    .carousel-item {
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 40px;
+      width: 940px;
+      min-height: 280px;
+    }
+
+    #carousel-item-01 {
+      background: #4D4D4D url('images/bokeh-01.png') bottom center; 
+    }
+
+    #carousel-item-02 {
+      background: #AF96BE url('images/bokeh-02.png') bottom center; 
+    }
+
+    #carousel-item-03 {
+      background: #4D4D4D url('images/bokeh-03.png') bottom center;
+    }
+
+    #carousel-item-04 {
+      background: #AF96BE url('images/bokeh-04.png') bottom center;
+    }
+
+    .caroufredsel_wrapper {
+      max-height: 240px;
+      background-color: black;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+   section:nth-child(2n) {
+    background-color: #4D4D4D; 
+    -webkit-box-shadow: 0px -2px 2px rgba(50, 50, 50, 0.55);
+    -moz-box-shadow:    0px -2px 2px rgba(50, 50, 50, 0.55);
+    box-shadow:         0px -2px 2px rgba(50, 50, 50, 0.55);
+   }
+
+    section:nth-child(2n) h2 {
+      color: #CCCCCC;
+      text-shadow: 0 1px 1px black;
+    }
+
+.section-content-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+  }
+
+li {
+  line-height: 160%;
+  margin-left: 0px;
+}
+
+  li::selection,
+  p::selection,
+  li::-webkit-selection,
+  p::-webkit-selection,
+  li::-moz-selection,
+  p::-moz-selection {
+    color: white;
+    background-color: #AF96BE;
+  }
+
+
+
+ul {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.job-title-container {
+  float: left;
+}
+
+.job-details-container {
+  float: right;
+}
+
+  .job-location,
+  .job-dates {
+    text-align: right;
+  }
+
+  .job-location {
+    margin-top: 20px;
+  }
+
+.job-tasks {
+  clear: left;
+  max-width: 65%;
+}
+
+footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  min-height: 160px;
+  color: white;
+  background-color: #4D4D4D;
+  -webkit-box-shadow: 0px -2px 2px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow:    0px -2px 2px rgba(50, 50, 50, 0.2);
+  box-shadow:         0px -2px 2px rgba(50, 50, 50, 0.2);
+}
+
+  footer h3 {
+    padding: 0px;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: #969696;
+  }
+
+    footer a:hover {
+      color: #CCCCCC;
+    }
+
+  .footer-subsection {
+    float: left;
+    margin-right: 80px;
+    padding-bottom: 40px;
+  }
